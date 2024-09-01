@@ -29,7 +29,7 @@ exports.AppModule = AppModule = __decorate([
                     autoLoadEntities: true,
                     logging: true,
                     keepConnectionAlive: true,
-                    entities: ["dist/**/*.entity{.ts}"],
+                    entities: ["dist/**/*.entity{.ts,.js}"],
                     synchronize: configService.getOrThrow("ENVIRONMENT") == "development"
                         ? true
                         : false,
