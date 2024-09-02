@@ -16,7 +16,7 @@ import { CoursesModule } from "./courses/courses.module";
         type: "postgres",
         url: configService.getOrThrow("DB_URL"),
         autoLoadEntities: true,
-        logging: true,
+        // logging: true,
         keepConnectionAlive: true,
         entities: ["dist/**/*.entity{.ts,.js}"],
         synchronize:
